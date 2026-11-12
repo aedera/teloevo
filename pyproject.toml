@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "teloevo"
 version = "0.1.0"
 description = "Symbolic forward simulation of centromeric satellite evolution"
+readme = "README.md"
 requires-python = ">=3.9"
 dependencies = ["numpy>=1.21"]
 

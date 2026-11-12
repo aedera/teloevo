@@ -1,4 +1,4 @@
-include INSTALL.md PROVENANCE.json VALIDATION.json requirements.txt
+include README.md INSTALL.md PROVENANCE.json VALIDATION.json requirements.txt
 recursive-include src/teloevo/cpp *.cpp
 recursive-include src/teloevo/data *.fasta *.gff3 *.npy *.json
 recursive-include tests *.py *.cpp
