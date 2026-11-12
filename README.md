@@ -21,11 +21,10 @@ python -m pip install .
 
 For Clang, set `CXX=clang++` before running a simulation.
 
-## Run the bundled example
+## Run
 
-Real CEN1 sequence, satellite annotations and position-specific SNP inputs are
-included. No additional data download is needed. Satellites are normalized to
-178 bp.
+Use the real Col-0 CEN1 sequence, satellite annotations and position-specific SNP inputs that are
+included in the repository:
 
 ```bash
 teloevo --generations 1000 --checkpoints 0,100,500,1000 \
@@ -60,10 +59,3 @@ in the reconstructed array, with 1-based inclusive coordinates and symbol IDs.
 The exporter uses saved data and does not rerun the simulation. It can also be
 run directly with `python src/teloevo/export.py` and the same arguments.
 Run `teloevo-export --help` for details.
-
-## Tests
-
-```bash
-python -m pip install '.[test]'
-python -m pytest -q
-```
