@@ -1,0 +1,74 @@
+{
+  "assembly": "Col-CEN v1.2",
+  "bundled_record": "CEN1",
+  "bundled_sha256": {
+    "CEN1.fasta": "6f9b303f841dccb45a1efb4c2e16862c50b071d3157c99323ee2c3adc718e09f",
+    "CEN1.gff3": "1a751f23a62039bd1393337584faf032681e19cc57f1d62f89bafce334eaf092",
+    "CEN178_mu_per_position.npy": "a03779ccd80085a266c997c24f24f6b40910c5e410534bfea4b805b4938fd108",
+    "cen178_consensus.fasta": "98cc6c79ad850f001ec905d4257162d53028c2885577a09315b80780abe8d3e9",
+    "cen_spectrum.json": "f376613d080821581c9de5f2b5122ed2a62f3fceb3e8530411b252a4ee371829"
+  },
+  "coordinate_mapping": "original_Chr1_position = local_CEN1_position + 14841109",
+  "fasta_length_bp": 2287856,
+  "gff_feature_count": 12746,
+  "gff_transformations": [
+    "Select complete features overlapping the source interval.",
+    "Replace seqid Chr1 with CEN1 and subtract 14841109 from coordinates.",
+    "Retain source IDs, source, feature type, strand, score, phase and attributes.",
+    "Set Length to end-start+1; retain its source value in OriginalLength.",
+    "Add OriginalSeqid, OriginalStart and OriginalEnd attributes."
+  ],
+  "schema_version": 1,
+  "simulation_initialization": {
+    "method": "Orient each feature by strand; trim excess bases from the biological 5-prime end; pad short features at the biological 3-prime end with the consensus suffix; retain genomic feature order.",
+    "monomer_length_bp": 178,
+    "monomers": 12746,
+    "normalized_length_bp": 2268788,
+    "telobox_bearing_monomers": "Retained as present in the real reference; no replacement."
+  },
+  "snp_inputs": {
+    "source_directory": "ba-per-satellite-simulation/00-inputs",
+    "source_file": "ba-per-satellite-simulation/00-inputs/CEN178_mu_per_position.npy",
+    "source_repository": "https://github.com/aedera/new_ITR_sim",
+    "spectrum_source": "Centromeric SNPs from MA32-59, MA32-69, MA32-89 and MA32-119; 64 records, normalized per reference base.",
+    "zero_rate_replacement_per_bp_per_generation": 1e-10
+  },
+  "source_feature_length_counts_inclusive": {
+    "105": 1,
+    "110": 1,
+    "143": 1,
+    "161": 2,
+    "169": 6,
+    "170": 2,
+    "171": 4,
+    "172": 5,
+    "173": 156,
+    "174": 176,
+    "175": 101,
+    "176": 781,
+    "177": 2713,
+    "178": 8645,
+    "179": 127,
+    "180": 9,
+    "181": 4,
+    "182": 1,
+    "183": 5,
+    "45": 2,
+    "79": 1,
+    "87": 2,
+    "99": 1
+  },
+  "source_files": {
+    "Col-CEN_v1.2.fasta": {
+      "sha256": "21c467339262bcc1854492451894241ac1bc31de63c5a1521caeb5439075bcd2"
+    },
+    "Naish2021.centromere.gff": {
+      "sha256": "b65f3b4137ceac81c9f02fa877cb33762a33cadc1a22d74111cff1ecc9242a31"
+    }
+  },
+  "source_interval_1based_inclusive": [
+    14841110,
+    17128965
+  ],
+  "source_record": "Chr1"
+}

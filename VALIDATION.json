@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-11",
+  "python": "3.9.13",
+  "numpy": "2.0.2",
+  "pytest": "8.4.2",
+  "compiler": "g++ 11.4.0 (C++17)",
+  "tests": {
+    "passed": 69,
+    "failed": 0,
+    "skipped": 0
+  },
+  "distribution_build": {
+    "sdist": true,
+    "wheel_built_from_sdist": true,
+    "wheel_resources_complete": true
+  },
+  "installed_package_location": "Isolated virtual environment, outside the source tree.",
+  "runtime_dependency_check": "Installed example and all tests passed with NumPy, without SciPy or pandas.",
+  "installed_cli_example": {
+    "backend": "cpp-blocked",
+    "seed": 846,
+    "generations": [
+      0,
+      1,
+      10,
+      100,
+      1000
+    ],
+    "total_monomers": [
+      12746,
+      12746,
+      12758,
+      12760,
+      12873
+    ],
+    "telobox_monomers": [
+      221,
+      221,
+      221,
+      221,
+      222
+    ],
+    "all_checkpoint_symbols_saved": true
+  },
+  "original_comparison": {
+    "original_real_state_matches": true,
+    "initial_monomers": 12746,
+    "normalized_dna_sha256": "4d84e6f57701d898a980825f9ceac6613f75d4e0874fff80ec5e490697c8f001",
+    "comparisons": [
+      {
+        "case": "real_CEN1",
+        "backend": "SymbolicDongSimulator",
+        "seed": 0,
+        "generations": 1000,
+        "identical": true
+      },
+      {
+        "case": "real_CEN1",
+        "backend": "SymbolicDongSimulator",
+        "seed": 846,
+        "generations": 1000,
+        "identical": true
+      },
+      {
+        "case": "real_CEN1",
+        "backend": "CppBlockedSymbolDongSimulator",
+        "seed": 0,
+        "generations": 1000,
+        "identical": true
+      },
+      {
+        "case": "real_CEN1",
+        "backend": "CppBlockedSymbolDongSimulator",
+        "seed": 846,
+        "generations": 1000,
+        "identical": true
+      },
+      {
+        "case": "capped_high_mutation",
+        "backend": "SymbolicDongSimulator",
+        "seed": 17,
+        "generations": 40,
+        "identical": true
+      },
+      {
+        "case": "capped_high_mutation",
+        "backend": "CppBlockedSymbolDongSimulator",
+        "seed": 17,
+        "generations": 40,
+        "identical": true
+      }
+    ]
+  },
+  "scope": "Short installation and regression checks; no long biological simulations.",
+  "intentional_source_change": "Correct DEFAULT_MONOMER from 177 to 178 bp and rename runtime temporary directories/cache; mutation algorithms and the C++ source retained.",
+  "license": "Undecided; no license file created.",
+  "exporter_validation": {
+    "installed_command": "teloevo-export",
+    "source_generation": 1000,
+    "satellites": 12873,
+    "sequence_length_bp": 2291394,
+    "dna_sha256": "2c00d233626b76c599ce61f3e7fe974e8be8841734f897305691954a94aae4ac",
+    "fasta_sequence_matches_checkpoint": true,
+    "gff_round_trip_matches_checkpoint": true,
+    "ran_without_compiler_on_path": true,
+    "simulations_rerun": false,
+    "standalone_script_test_passed": true,
+    "new_export_tests_passed": 15
+  }
+}

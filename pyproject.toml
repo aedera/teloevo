@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "teloevo"
+version = "0.1.0"
+description = "Symbolic forward simulation of centromeric satellite evolution"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+teloevo = "teloevo.cli:main"
+teloevo-export = "teloevo.export:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+teloevo = ["cpp/*.cpp", "data/*.fasta", "data/*.gff3", "data/*.npy", "data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
