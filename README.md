@@ -35,9 +35,8 @@ teloevo --generations 1000 --checkpoints 0,100,500,1000 \
 This simulates the bundled CEN1 for 1,000 generations using seed `846` and
 saves checkpoints at generations 0, 100, 500, and 1,000 in `cen1_example.npz`.
 
-The NPZ stores the complete symbolic state at each requested checkpoint,
-including satellite sequences and order. Existing output files are never
-overwritten.
+The NPZ stores the complete coarse-grained centromere at each requested checkpoint,
+including satellite sequences and order.
 
 For another centromere, provide a matching FASTA record and satellite GFF:
 
@@ -47,7 +46,7 @@ teloevo --fasta reference.fasta --gff satellites.gff3 --chrom Chr2 \
 ```
 
 Optional `--start` and `--end` select an interval using 1-based inclusive
-coordinates. Run `teloevo --help` for mutation rates and other options.
+coordinates in `satellites.gff3`. Run `teloevo --help` for mutation rates and other options.
 
 ## Export a checkpoint
 
