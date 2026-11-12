@@ -3,7 +3,9 @@
 Simulate centromeric satellite evolution and export saved checkpoints as DNA
 FASTA and satellite GFF3 files.
 
-![CEN1 centromere evolution](CEN1.gif)
+<p align="center">
+  <img src="CEN1.gif" alt="CEN1 centromere evolution">
+</p>
 
 ## Installation
 
