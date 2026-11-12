@@ -3,6 +3,8 @@
 Simulate centromeric satellite evolution and export saved checkpoints as DNA
 FASTA and satellite GFF3 files.
 
+![CEN1 centromere evolution](CEN1.gif)
+
 ## Installation
 
 Requires **Python 3.9+** and a **C++17 compiler**, such as `g++`. NumPy is
